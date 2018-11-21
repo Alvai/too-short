@@ -9,7 +9,7 @@ dotenv.config();
 
 const create = async (req, res) => {
     const { originalUrl } = req.body;
-    const shortBaseUrl = process.env.shortBaseUrl;
+    const shortBaseUrl = process.env.SHORT_BASE_URL;
     if (validUrl.isUri(shortBaseUrl)) {
     } else {
       return res
@@ -68,7 +68,7 @@ const retrieveById = (req, res) => {
     if (result.rows[0]) {
       return res.redirect(result.rows[0].originalurl);
     } else {
-      return res.redirect('http://localhost:3001');
+      return res.redirect(process.env.ERROR_URl);
     }
   }).catch((error) => {return res.status(500).send(error);});
 };
