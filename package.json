@@ -1,0 +1,29 @@
+{
+  "name": "2short",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/server.js",
+    "dev": "nodemon ./bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://alvai.io",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "helmet": "^3.15.0",
+    "moment": "^2.22.2",
+    "pg": "^7.4.3",
+    "shortid": "^2.2.14",
+    "uuid": "^3.3.2",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {}
+}
