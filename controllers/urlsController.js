@@ -68,7 +68,7 @@ const retrieveById = (req, res) => {
     if (result.rows[0]) {
       return res.redirect(result.rows[0].originalurl);
     } else {
-      return res.redirect(process.env.ERROR_URl);
+      return res.redirect(process.env.ERROR_URL);
     }
   }).catch((error) => {return res.status(500).send(error);});
 };
